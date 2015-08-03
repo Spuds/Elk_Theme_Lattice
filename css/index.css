@@ -493,7 +493,7 @@ h2 a.collapse {
 }
 #category_toggle span, #category_toggle_more span, #upshrink_header span, .package_toggle span {
 	background-repeat: no-repeat;
-	background-image: url(../images/_light/expcol.png);
+	background-image: url(../images/_rust/expcol.png);
 	position: absolute;
 	top: 50%;
 	margin-top: -30px;
@@ -2161,7 +2161,7 @@ div.core_posts {
 	vertical-align: top;
 	width: 15em;
 	word-wrap: break-word;
-	word-break: break-all;
+	word-break: normal;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
@@ -4623,9 +4623,6 @@ dl.no_members {
 	}
 	.linktree .board_moderators {
 		display: none;
-	}
-	.statsbar .bar {
-		max-width: 12em;
 	}
 	.signature {
 		display: none;

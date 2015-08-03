@@ -905,7 +905,7 @@ div.bbc_footnotes .meaction {
 }
 
 .category_boards .board_icon, .board_key:before {
-	background: url(../../images/_light/board_icons.png) no-repeat;
+	background: url(../../images/_rust/board_icons.png) no-repeat;
 }
 
 .on_board {
@@ -1686,7 +1686,7 @@ div.bbc_footnotes .meaction {
 }
 
 .profile_pie {
-	background: url(../../images/_light/stats_pie.png);
+	background: url(../../images/_rust/stats_pie.png);
 }
 
 .topic_details {

@@ -299,13 +299,11 @@ function template_body_above()
 			</div>
 			<h1 id="forumtitle">
 				<a href="', $scripturl, '">', $context['forum_name'], '</a>
+				<span id="logobox">
+					<img id="logo" src="', $context['header_logo_url_html_safe'], '" alt="', $context['forum_name_html_safe'], '" title="', $context['forum_name_html_safe'], '" />', empty($settings['site_slogan']) ? '' : '
+					<span id="siteslogan">' . $settings['site_slogan'] . '</span>', '
+				</span>
 			</h1>';
-
-	echo '
-			<div id="logobox">
-				<img id="logo" src="', $context['header_logo_url_html_safe'], '" alt="', $context['forum_name_html_safe'], '" title="', $context['forum_name_html_safe'], '" />', empty($settings['site_slogan']) ? '' : '
-				<div id="siteslogan">' . $settings['site_slogan'] . '</div>', '
-			</div>';
 
 	// Show the menu here, according to the menu sub template.
 	echo '

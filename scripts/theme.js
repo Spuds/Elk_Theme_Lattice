@@ -7,7 +7,7 @@
  * copyright:	2011 Simple Machines (http://www.simplemachines.org)
  * license:		BSD, See included LICENSE.TXT for terms and conditions.
  *
- * @version 1.1
+ * @version 1.1.9
  */
 
 /**
@@ -53,6 +53,9 @@ $(function() {
 	if (typeof elk_codefix === 'function')
 		elk_codefix();
 
+	// Remove "show more" from short quotes
+	if (typeof elk_quotefix === 'function')
+		elk_quotefix();
 	// Enable the ... page expansion
 	$('.expand_pages').expand_pages();
 
@@ -62,7 +65,7 @@ $(function() {
 		$(this).parent().toggleClass("collapsed");
 	});
 
-	$('legend', function () {
+	$('legend').each(function () {
 		if ($(this).data('collapsed'))
 			$(this).click();
 	});

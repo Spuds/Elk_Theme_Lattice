@@ -1897,6 +1897,8 @@ nav > .quickbuttons {
 .quickbuttons .inline_mod_check {
 	margin: 4px 4px 4px 0;
 	padding: 0 4px;
+	border: 1px solid;
+	line-height: 2em;
 }
 
 /* @todo - Save code by amalgamating common button background declarations. */
@@ -6263,7 +6265,7 @@ a > i {
 	}
 
 	#forumposts .nextlinks {
-		width: 100%;
+		width: 50%;
 		text-align: right;
 		white-space: normal;
 	}
@@ -6491,11 +6493,20 @@ a > i {
 
 	.topic_name h4 {
 		font-size: 1.357em;
-		display: block;
+		max-height: 3em;
+		line-clamp: 2 "...";
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 
 	.topic_name h4 a {
-		word-wrap: break-word;
+		text-overflow: ellipsis;
+	}
+
+	.basic_row .topic_name h4 {
+		padding-right: 0;
 	}
 
 	#wrapper {
@@ -6816,7 +6827,6 @@ a > i {
 	}
 
 	#search_form {
-		float: none;
 		text-align: center;
 	}
 
